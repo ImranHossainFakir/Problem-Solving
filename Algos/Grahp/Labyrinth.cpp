@@ -12,7 +12,6 @@ using namespace std;
 const int N = 1e6+9;
 const int Row = 1e3+9;
  
- 
 string s[Row];
 int row, col, inx; 
 bool vis[N];
@@ -22,11 +21,7 @@ queue < int > q;
  
 bool ok(int i, int j) {
     int ind = i * col + j;
-    bool flag = false;
- 
-    if ((-1 < i && i < row) && (-1 < j && j < col) && ind < (row * col) && s[i][j] != '#' && !vis[ind]) flag = true;
-    
-    return flag;
+    return -1 < i && i < row && -1 < j && j < col && ind < row * col && s[i][j] != '#' && !vis[ind];
 }
  
  
@@ -64,10 +59,7 @@ int search_from(int i, int j) {
 }
  
 void print_ans() {
- 
- 
     stack < char > ans;
- 
     while (inx != -1) {
         ans.push(path[inx]);
         inx = p[inx];
@@ -79,11 +71,9 @@ void print_ans() {
         cout << ans.top();
         ans.pop();
     }
- 
 }
  
 void bfs(int ind) {
-    
     q.push(ind);
     inx = -1;
     p[ind] = -1;
@@ -101,12 +91,10 @@ void bfs(int ind) {
             inx = search_from(i, j);
         }
     }
- 
     if (inx == -1) cout << "NO" << endl;
     else print_ans();
  
     return;
- 
 }
  
 void solved() {
@@ -128,16 +116,13 @@ void solved() {
  
 int32_t main() {
     Faster;
- 
     cin >> row >> col;
  
     for (int i = 0; i < row; i++) cin >> s[i];
- 
     for (int i = 0; i < col * row; i++) {
         vis[i] = false;
         path[i] = 0;
     }
- 
     solved();
  
     return 0;
