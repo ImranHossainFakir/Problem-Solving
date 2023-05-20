@@ -1,6 +1,6 @@
 ### Problem Solving 
 |  | Network                                 | NO of Problems | \|E\| | Links of the websites                                    |
-|------------|------------------------------------------------|-------|----------------------------------------------------------|
+|------------|-------------------------------|----------------|-------|----------------------------------------------------------|
 |          1 | CodeForces                    |  0             |  4660 | https://codeforces.com/profile/peripatetic               |
 |          2 | Codeforces                    |  0             |  2091 | https://codeforces.com/profile/_Imran                    |
 |          3 | CSES                          |  0             |  1648 | http://networkrepository.com/bio-CE-LC.php               |
