@@ -1,11 +1,11 @@
 ### Problem Solving 
-|  | Network                                 | NO of Problems | \|E\| | Links of the websites                                    |
-|------------|-------------------------------|----------------|-------|----------------------------------------------------------|
-|          1 | CodeForces                    |  0             |  4660 | https://codeforces.com/profile/peripatetic               |
-|          2 | Codeforces                    |  0             |  2091 | https://codeforces.com/profile/_Imran                    |
-|          3 | CSES                          |  0             |  1648 | http://networkrepository.com/bio-CE-LC.php               |
-|          4 | LightOj                       |  0             | 15677 | http://networkrepository.com/inf-openflights.php         |
-|          5 | Spoj                          |  0             |  6632 | http://networkrepository.com/tech-routers-rf.php         |
-|          6 | Atcoder                       |  0             |  6474 | http://networkrepository.com/web-edu.php                 |
-|          7 | CodeChef                      |  0             |  3303 | http://networkrepository.com/road-minnesota.php          |
-|          8 | UAV                           |  0             |  6127 | http://networkrepository.com/delaunay-n11.php            |
+|  | Network                                 | Links of the websites                                                       |
+|------------|-------------------------------|-----------------------------------------------------------------------------|
+|          1 | CodeForces                    | https://codeforces.com/profile/peripatetic                                  |
+|          2 | Codeforces                    | https://codeforces.com/profile/_Imran                                       |
+|          3 | CSES                          | https://cses.fi/user/88966                                                  |
+|          4 | LightOj                       | https://lightoj.com/user/peripatetic                                        |
+|          5 | Spoj                          | https://www.spoj.com/myaccount/                                             | 
+|          6 | Atcoder                       | https://atcoder.jp/users/peripatetic                                        |
+|          7 | CodeChef                      | https://www.codechef.com/users/peripatetic                                  |
+|          8 | UAV                           | https://onlinejudge.org/index.php?option=com_comprofiler&Itemid=3           |
