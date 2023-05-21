@@ -10,3 +10,4 @@
 |          7 | CodeChef                      | https://www.codechef.com/users/peripatetic                                  |
 |          8 | UAV                           | https://onlinejudge.org/index.php?option=com_comprofiler&Itemid=3           |
 |          9 | LeetCode                      | https://leetcode.com/peripatetic/                                           |
+|         10 | StopStalk                     | https://www.stopstalk.com/user/profile/peripatetic                          |
