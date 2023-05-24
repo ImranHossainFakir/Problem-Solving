@@ -1,5 +1,5 @@
 ### Problem Solving 
-|  | Network                                 | Links of the websites                                                       |
+|            |                               | Links of the websites                                                       |
 |------------|-------------------------------|-----------------------------------------------------------------------------|
 |          1 | CodeForces                    | https://codeforces.com/profile/peripatetic                                  |
 |          2 | Codeforces                    | https://codeforces.com/profile/_Imran                                       |
