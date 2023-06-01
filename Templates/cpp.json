@@ -1,4 +1,5 @@
-
+// For setting up this snippet in your vs code just go to ```File -> Prefernces -> Configure User Snippets```
+// then type ```cpp.json``` and paste the code given below ans save
 {
     "template": {
       "prefix": "template",
