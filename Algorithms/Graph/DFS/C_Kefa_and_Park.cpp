@@ -1,5 +1,4 @@
 /*
-* Problem link -> https://codeforces.com/contest/580/problem/C
 * This is a simple DFS problem. Where we need to determine weather we can go to the leaf nodes.
 * time : O(nodes + edges)
 */
