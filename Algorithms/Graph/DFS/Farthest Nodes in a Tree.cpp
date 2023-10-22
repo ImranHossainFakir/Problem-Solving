@@ -1,6 +1,4 @@
-/*
-* problem link -> https://lightoj.com/problem/farthest-nodes-in-a-tree
-*/
+
 #include "bits/stdc++.h"
      
 using namespace std;
