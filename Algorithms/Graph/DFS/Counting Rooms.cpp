@@ -1,5 +1,4 @@
 /*
-* Problem link -> https://cses.fi/problemset/task/1192/
 * This is a graph problem where we have to find out how many connected components have.
 * time : O (row * col)
 */
