@@ -1,4 +1,3 @@
-// Problem link -> https://cses.fi/problemset/task/1669/
 // simple dfs problem. 
 // We use dfs to search a cycle in every Connected component. 
 // if loop/cycle exist then we can say that answer is exist other wise Impossible.
