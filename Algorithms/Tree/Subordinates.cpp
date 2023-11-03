@@ -3,7 +3,10 @@ This is a Tree Problem.
 I used DFS to find out the length of each sub tree of each sub tree parent nodes.
 There have another solution.
 Both solution are using recursive function to solve the problem.
+
 Time Complexity: O(N) where N is the node number.
+
+Problem Link: https://cses.fi/problemset/task/1674
 */
 
 #include<bits/stdc++.h>
