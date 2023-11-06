@@ -1,8 +1,13 @@
-// problem link -> https://lightoj.com/problem/a-toy-company
-// To solve this problem we used BFS to find the answer. 
-// We picked a word/string and figured out the possible states for it. 
-// Checked all the possible words/strings that will have forbidden string or not.
-// Compared all possible words with the Finish word/string are they same or not. if same then answer is found.
+/* 
+To solve this problem we used BFS to find the answer. 
+We picked a word/string and figured out the possible states for it. 
+Checked all the possible words/strings that will have forbidden string or not.
+Compared all possible words with the Finish word/string are they same or not. if same then answer is found.
+
+Problem link -> https://lightoj.com/problem/a-toy-company
+
+Time Complextity: 
+*/
 
 #include <bits/stdc++.h>
 
