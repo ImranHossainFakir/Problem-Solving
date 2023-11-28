@@ -1,3 +1,11 @@
+/*
+
+ Problem link: https://codeforces.com/contest/1896/problem/B
+ 
+*/
+
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -45,7 +53,7 @@ int solve()
     if (A == -1 || B == -1)
         return ans;
 
-    
+
     for (int i = A; i <= B; i++)
     {
         // Counting Consecutive A
