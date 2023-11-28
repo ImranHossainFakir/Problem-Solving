@@ -12,85 +12,58 @@ using namespace std;
 #define what_is(x) cerr << #x << " is " << x << endl;
 #define all(x) (x).begin(), (x).end()
 
-void _swap(vector < pair < int, int > > &seg, string &str)
+// Finding the left most A.
+int findA(string &str) 
 {
     int len = str.length();
+    for (int i = 0; i < len; i++)
+        if (str[i] == 'A')
+            return i;
 
-    for (int i = 0; i < (int)seg.size(); i++) 
-    {
-        int s = seg[i].first, e = seg[i].second;
-        if (e == len-1)
-            break;
-        if (str[e+1] == 'B')
-            swap(str[s], str[e+1]);
-    }
+    return -1;
 }
 
-void make_seg(vector < pair < int , int > > &seg, string &str, int &ans, vector < bool > &vis) 
+// Finding the rightmost B.
+int findB(string &str) 
 {
     int len = str.length();
-
-    for (int i = 0, s = -1; i < len; i++) 
-    {
-        if (str[i] == 'A')
-        {
-            if (s == -1)
-                s = i;
-        }
-        else if (s != -1) {
-            seg.push_back({s, i-1});
-            s = -1;
-        }
-        if (i == len-1 && s != -1)
-            seg.push_back({s, i});
-
-    }
+    for (int i = len-1; i >= 0; i--)
+        if (str[i] == 'B')
+            return i;
+    return -1;
 }
 
 int solve()
 {
-    int n, cntA = 0, ans = 0;
+    int n, cntA = 0, ans = 0, B, A;
     cin >> n;
     string str;
     cin >> str;
-    vector < pair < int, int > > seg;
-    vector < bool > vis(n, false);
+    A = findA(str);
+    B = findB(str);
+    
+    if (A == -1 || B == -1)
+        return ans;
 
-    make_seg(seg, str, ans, vis);
-
-    for (int i = 0; i < str.length(); i++)
+    
+    for (int i = A; i <= B; i++)
     {
+        // Counting Consecutive A
         if (str[i] == 'A')
-        {
-            vis[i] = true;
             cntA++;
-        }
-        if (str[i] == 'B' && cntA)
+        else if (str[i] == 'B' && cntA)
         {
             ans += cntA;
-            vis[i-1] = true;
-            while (++i < str.length() && str[i] == 'B')
-            {
-                vis[i-1] = true;
-                ans++;
-            }
             cntA = 0;
+            while (++i <= B && str[i] == 'B')
+                ans++;
+            // If i is less then B then it is confirm that
+            // in the right side of i have/has some A and B.
+            if (i < B)
+                ans++;
             i--;
         }
     }
-
-    _swap(seg, str);
-
-    for (int i = 0; i < str.length()-1; i++) 
-    {
-        if (!vis[i] && str[i] == 'A' && str[i+1] == 'B')
-        {
-            vis[i] = true;
-            swap(str[i], str[i+1]);
-            ans++;
-        }
-    }
-   
     return ans;
 }
 
