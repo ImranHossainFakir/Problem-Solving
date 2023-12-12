@@ -2,7 +2,7 @@
 
 /*
 
-Problem link:
+Problem link: https://codeforces.com/contest/1907/problem/C
 Time Complexity:
 
 */
@@ -23,41 +23,23 @@ using namespace std;
 
 void solve()
 {
-    int n;
+    int n, mx = INT_MIN;;
     cin >> n;
     string str;
     cin >> str;
     vector<int> freq(26, 0);
 
-    for (int i = 0; i < n; i++)
+    // to count frequency of the letters
+    for (int i = 0; i < n; i++) {
         freq[str[i] - 'a']++;
-
-    int sum = 0;
-    sort(all(freq));
-    reverse(all(freq));
-
-    for (int i = 0; i < 26; i++)
-    {
-        while (freq[i])
-        {
-            bool flag = true;
-            for (int j = 25; j > i; j--)
-            {
-                if (freq[j])
-                {
-                    freq[i]--;
-                    freq[j]--;
-                    flag = false;
-                }
-                if (!freq[i])
-                    break;
-            }
-            if (flag)
-                break;
-        }
+        mx = max(mx, freq[str[i]-'a']);
     }
-    for (auto v : freq) sum += v;
-    cout << sum << endl;
+
+    // If mx covers the |n-mx| letters,
+    // then answer will be mx - |n-mx|.
+    // Otherwise n%2.
+    int rem = n - mx;
+    cout << (mx > rem ? mx - rem : n%2) << endl;
 }
 int32_t main()
 {

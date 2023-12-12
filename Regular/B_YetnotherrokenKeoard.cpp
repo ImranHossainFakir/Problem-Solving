@@ -2,8 +2,8 @@
 
 /*
 
-Problem link:
-Time Complexity:
+Problem link: https://codeforces.com/contest/1907/problem/B
+Time Complexity: O(t * n) n = lenght of string
 
 */
 
