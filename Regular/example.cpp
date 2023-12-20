@@ -10,25 +10,15 @@ using namespace std;
 #define all(x) (x).begin(), (x).end()
 
 
-void solve() {
-    int a, b, c; cin >> a >> b >> c;
-    vector < int > arr{a, b, c};
-    sort(all(arr));
-    cout << arr[1] << endl;
+void A() {
+    int x, y, w, z; cin >> x >> y >> w >> z;
+    cout << (x+y) << " " << (w-z) << " " << (x*z) << " " << (w/y) << endl;
 }
 
-void solve1() {
-    double d1, d2, t1, t2;
-    cin >> d1 >> t1 >> d2 >> t2;
-    double v1 = d1 / t1;
-    double v2 = d2 / t2;
-    double ans = v1 - v2;
-    cout << fixed << setprecision(4) << v2 << endl;
-}
+
 
 int32_t main() {
     Faster;
-    // solve();
-    solve1();
+    A();
     return 0;
 }
