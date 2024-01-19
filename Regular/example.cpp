@@ -19,6 +19,9 @@ void A() {
 
 int32_t main() {
     Faster;
-    A();
+    int i = 1; 
+    while (i++ <= 1);
+    while (i++ <= 2);
+    cout << i;
     return 0;
 }
