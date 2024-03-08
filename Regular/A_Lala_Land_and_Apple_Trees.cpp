@@ -31,7 +31,7 @@ int make_sum(int dir)
     while (indexs[dir] < (int)positions[dir].size())
     {
         sum += positions[dir][indexs[dir]++].second;
-        dir ^= 1;
+        dir ^= 1;  
     }
     return sum;
 }
@@ -40,12 +40,11 @@ void solve()
 {
     int n; cin >> n;
 
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
     {
         int tem, v; cin >> tem >> v;
         if (tem < 0) positions[0].push_back({-1*tem, v});
         else positions[1].push_back({tem, v});
-
     }
 
     // sorting based on positions of the tree.
@@ -57,9 +56,42 @@ void solve()
     cout << mx << endl;
 
 }
+
+
+void hudai() {
+    int n, pst = 0, neg = 0, sum = 0; cin >> n;
+    vector < pair < int, int > > x, y;
+    for (int i = 0; i < n; i++)
+    {
+        int pos, val; cin >> pos >> val;
+        if (pos < 0)
+        {
+            y.push_back(make_pair(-pos, val));
+            neg++;
+        }
+        else 
+        {
+            x.push_back(make_pair(pos, val));
+            pst++;
+        }
+    }
+
+    sort(all(x));
+    sort(all(y));
+
+    for (int i = 0; i < min(pst, neg); i++)
+            sum += x[i].second + y[i].second;
+    if (pst < neg)
+        sum += y[pst].second;
+    else if (pst > neg)
+        sum += x[neg].second;
+    cout << sum << endl;
+}
+
 int32_t main() {
     Faster;
     
-    solve();
+    // solve();
+    hudai();
     return 0;
 }
