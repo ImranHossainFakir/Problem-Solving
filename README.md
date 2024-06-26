@@ -1,5 +1,5 @@
 ### Problem Solving 
-Here are some profiles links:
+Here are links to some my profiles;
 </br>
 |            |                               | Links of the websites                                                       |
 |------------|-------------------------------|-----------------------------------------------------------------------------|
