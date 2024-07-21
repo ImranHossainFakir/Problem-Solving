@@ -21,11 +21,11 @@ void method1(int k)
 {
     if (k == n)
     {
-        int len = (int)subsets.size();
+        int len = subsets.size();
         cerr << "{";
         if (len == 0)
         {
-            cerr << "}";
+            cerr << "}" << endl;
             return;
         }
         for (int i = len-1; ;)
@@ -36,15 +36,16 @@ void method1(int k)
                 break;
             cerr << ", ";
         }
-        cerr << "}";
+        cerr << "}" << endl;
     }
     else 
     {
-
+        // calling method1 without including k
         method1(k+1);
         // before k included
         subsets.push_back(k);
         // after k included
+        // calling method1 including k
         method1(k+1);
         subsets.pop_back();
     }
